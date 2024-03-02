@@ -24,10 +24,10 @@ void setup ()
 }
 public void setMines()
 {
-    int row = Math.random()*(NUM_ROWS-1);
+    int row = (int)Math.random()*(NUM_ROWS-1);
     int columns = Math.random()*(NUM_COLS-1);
-    if (mines.contains(buttons[r][c] == false)){
-        mines.add(buttons[r][c]);
+    if (mines.contains(buttons[row][column] == false)){
+        mines.add(buttons[row][column]);
     }
 }
 
